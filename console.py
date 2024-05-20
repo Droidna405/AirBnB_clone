@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
+"""Airbnb command-line interface using cmd module."""
+
+
 import cmd
 import json
 
 
 class AirbnbCLI(cmd.Cmd):
+    """Command interpreter for Airbnb."""
 
     prompt = "(hbnb) "
     user_db_file = 'users.json'
@@ -11,16 +15,17 @@ class AirbnbCLI(cmd.Cmd):
 
     def do_help(self, args):
         """List available commands."""
-        print("\n Documented commands (type help <topic>):")
+        print('\n')
+        print("Documented commands (type help <topic>):")
         print("========================================")
-        print("EOF  help  quit\n")
+        print("EOF  help  quit")
 
     def do_quit(self, args):
         """Exit the Airbnb CLI>"""
         print()
         return True
 
-    def do_EOF(self,line):
+    def do_EOF(self, line):
         """Crtl+D command to exit the program"""
         print()
         return True
@@ -29,5 +34,6 @@ class AirbnbCLI(cmd.Cmd):
         """empty line after calling Enter"""
         pass
 
+
 if __name__ == '__main__':
-        AirbnbCLI().cmdloop()                                                                                                                                                                              
+    AirbnbCLI().cmdloop()
