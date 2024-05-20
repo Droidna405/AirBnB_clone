@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Airbnb command-line interface using cmd module."""
 
 
