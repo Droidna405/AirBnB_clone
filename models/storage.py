@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""A storage moudle.
+"""A storage module.
 """
 import json
 
 
-class FileStorage:
+class Storage:
     """A class that serializes instances to a JSON file and deserilaizes
     JSON file to instances.
     """
