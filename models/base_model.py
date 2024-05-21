@@ -12,7 +12,8 @@ class BaseModel:
     A base class for other classes in the project.
 
     Attributes:
-        id (str): Unique identifier for the instance, assigned as a UUID string.
+        id (str): Unique identifier for the instance,
+        assigned as a UUID string.
         created_at (datetime): The datetime when the instance is created.
         updated_at (datetime): The datetime when the instance is last updated.
 
